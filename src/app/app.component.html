@@ -20,7 +20,7 @@
             [checked]="todo.complete"
           />
           <label>{{ todo.title }}</label>
-          <button class="destroy" (click)="removeTodo(todo)">del</button>
+          <button class="destroy" (click)="removeTodo(todo)"></button>
         </div>
       </li>
     </ul>
@@ -30,7 +30,6 @@
       ><strong>{{ todos.length }}</strong>
       {{ todos.length == 1 ? 'item' : 'items' }} left</span
     >
-    <p>Click to edit a todo</p>
     <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
   </footer>
 </section>
