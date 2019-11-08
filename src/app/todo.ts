@@ -1,12 +1,9 @@
 export class Todo {
   id: number;
-  // tslint:disable-next-line: no-inferrable-types
-  title: string = '';
-  // tslint:disable-next-line:no-inferrable-types
-  complete: boolean = false;
+  title = '';
+  complete = false;
 
-  // tslint:disable-next-line:ban-types
-  constructor(values: Object = {}) {
+  constructor(values: {}) {
     Object.assign(this, values);
   }
 }
