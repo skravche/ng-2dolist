@@ -3,7 +3,6 @@ export class Todo {
   title = '';
   complete = false;
 
-  constructor(values: {}) {
-    Object.assign(this, values);
+  constructor(Object = {}) {
   }
 }
